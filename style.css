@@ -221,7 +221,7 @@ CODE DE LA PARTIE HEBERGEMENT
     flex-direction: row;
     justify-content: space-between;
 }
-#hebergement{
+.hebergement{
     background-color:#F2F2F2 ;
     padding: 35px;
     border-radius: 20px;
@@ -290,7 +290,7 @@ CODE DE LA PARTIE HEBERGEMENT
     background-image: url(ressources/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 
-.imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix, .imgSept, .imgHuit, .imgNeuf{
+.imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix{
     margin: 5px;
     width: 275px;
     height: 150px;
@@ -349,6 +349,13 @@ CODE DE LA PARTIE HEBERGEMENT
 }
 #titlePopulaire h2{
     margin: 0;
+}
+
+.imgSept, .imgHuit, .imgNeuf{
+    width: 150px;
+    height: 170px;
+    background-size:cover;
+    border-radius: 18px 0px 0px 18px;
 }
 
 
