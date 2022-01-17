@@ -1,3 +1,4 @@
+
 html, body{
 	margin: 0;
 	font-size: 16px;
@@ -17,6 +18,16 @@ i {
 h1, h2, h3, h4, h5, h6{
     margin-bottom: 0px;
     font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #0065FC;
+    transition: all 0.4s;
 }
 
 
@@ -54,20 +65,19 @@ nav div ul li {
     flex-direction: row;
     align-items: center;
 }
-a{
-    text-decoration: none;
-    color: black;
-   
-}
+
 
   .hoverUp:hover{
+    
     border-top: solid 2px #0065FC ;
     color: #0065FC ;
+    transition: all 0.2s;
 
   }
 
   .hoverUp:hover a {
     color: #0065FC ;
+    transition: all 0.2s;
   }
 
   /*=====================
@@ -618,11 +628,15 @@ RESPONSIVE PARTIE ACTIVITE
     
 }
 
+/*=======================
+    CODE PARTIE FOOTER
+========================*/
 
 footer{
     display: flex;
+   
     flex-direction: row;
-    justify-content: space-around;
+   padding-left: 30px;
     align-items: center;
     height: 200px;
     background-color:#F2F2F2 ; 
@@ -634,10 +648,27 @@ footer{
     display: flex;
     flex-direction: column;
     line-height: 30px;
+    width: 500px;
+    
 }
 
+/*=======================
+RESPONSIVE PARTIE FOOTER
+========================*/
 
+@media screen and (max-width: 768px) {
 
+    footer{
+        height:100% ;
+        flex-direction: column;
+    }
+    .footerInfo{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    
+        
+    }
 
 
 
