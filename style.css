@@ -93,10 +93,7 @@ a{
 }
 
 
-  #bold{
-      font-weight: 600;
-      font-size: 18px;
-  }
+  
 
 
 
@@ -184,6 +181,12 @@ CODE CSS POUR LES FILTRES
     width: 100%;
     
 }
+
+#filterNoCenter{
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .filtreName{
     position: relative;
     display: flex;
@@ -221,7 +224,6 @@ CODE CSS POUR LES FILTRES
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: 25;
     left: 0;
     background-color: #0065FC;
     visibility: hidden;
@@ -245,9 +247,9 @@ CODE CSS POUR LES FILTRES
      RESPONSIVE PARTIE FILTRE
       ======================*/
     @media screen and (max-width: 768px) {
-      #bold{
+      #filterNoCenter{
           width: 100%;
-          text-align: none !important;
+        
       }
       #filtres{
           width: 100%;
@@ -601,6 +603,10 @@ CODE DE LA PARTIE HEBERGEMENT
     margin: 0
 }
 
+
+/*=======================
+RESPONSIVE PARTIE ACTIVITE
+========================*/
 @media screen and (max-width: 768px) {
 
 .activiteBox, .activiteBoxExtraSmall, .activiteBoxSmall, .smallBox{
