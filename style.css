@@ -253,12 +253,50 @@ CODE DE LA PARTIE HEBERGEMENT
 
 }
 
-.background{
+
+.imgUn{
+    background-image: url(ressources/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.imgDeux{
+    background-image: url(ressources/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.imgTrois{
+    background-image: url(ressources/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.imgQuatre{
+    background-image: url(ressources/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.imgCinq{
+    background-image: url(ressources/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+.imgSix{
+    background-image: url(ressources/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.imgSept{
+    background-image: url(ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.imgHuit{
+    background-image: url(ressources/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.imgNeuf{
+    background-image: url(ressources/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix, .imgSept, .imgHuit, .imgNeuf{
     margin: 5px;
     width: 275px;
     height: 150px;
-    background: url(ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat center; 
     background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 18px 18px 0px 0px;
     
 }
@@ -289,19 +327,6 @@ CODE DE LA PARTIE HEBERGEMENT
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgb(218, 219, 235);
 
-}
-
-.backgroundPopulaire {
-    
-   
-    width: 150px;
-    height: 170px;
-    background: url(ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat center; 
-    background-size:cover;
-
-    border-radius: 18px 0px 0px 18px;
-
-    
 }
 
 .annonceInfoPopulaire{
