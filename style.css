@@ -260,9 +260,6 @@ CODE CSS POUR LES FILTRES
         margin: 0px 30px 10px 0px;
       }
     }
-    
-
-
 
     /*=========================
     CODE CSS POUR LA PARTIE INFO
@@ -621,6 +618,23 @@ RESPONSIVE PARTIE ACTIVITE
     
 }
 
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color:#F2F2F2 ; 
+
+}
+
+
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
 
 
 
