@@ -291,6 +291,8 @@ CODE CSS POUR LES FILTRES
 CODE DE LA PARTIE HEBERGEMENT
 ===========================*/
 
+
+
 #hebergementGeneral{
     margin: 30px;
     display: flex;
@@ -310,6 +312,11 @@ CODE DE LA PARTIE HEBERGEMENT
     padding: 35px;
     border-radius: 20px;
    width: 30%;
+}
+
+#titlePopulaire i{
+    font-size: 30px;
+    color: black;
 }
 
 .priceBold{
@@ -432,10 +439,11 @@ CODE DE LA PARTIE HEBERGEMENT
 }
 
 .imgSept, .imgHuit, .imgNeuf{
-    width: 150px;
-    height: 170px;
+    width: 250px;
+    height: auto;
     background-size:cover;
     border-radius: 18px 0px 0px 18px;
+    margin: 5px;
 }
 
 
@@ -445,14 +453,14 @@ CODE DE LA PARTIE HEBERGEMENT
     }
     #hebergementPopulaire{
         background-color:#F2F2F2 ;
-        
-        border-radius: 20px;
-       width: 100%;
+        border-radius: 0;
+        width: 100%;
 
     }
 
     .imgSept, .imgHuit, .imgNeuf{
-        width: 275px
+        width: 275px;
+        height: auto;
     }
 
     #hebergement{
@@ -467,8 +475,15 @@ CODE DE LA PARTIE HEBERGEMENT
         width: 100%;
     }
     .annonce{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix{
+       
+        width: auto;
         
     }
+    
 }
 
 
