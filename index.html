@@ -1,75 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>VOYAGE</title>
-    <script src="https://kit.fontawesome.com/ee26bceb89.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/b786775033.js" crossorigin="anonymous"></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="menu">
+    <header id="menu">
         <nav>
             <img src="ressources/images/logo/Booki.png" alt="logo">
             <div id="menu_left">
-                <li>Hébergement</li>
-                <li><a href="">Activités</a></li>
+                <ul>
+                    <li class="hoverUp" ><a href="#" >Hébergement</a></li>
+                    <li  class="hoverUp"><a href="#">Activités</a></li>
+                </ul>
+                
             </div>
             
         </nav>
-    </section>
+    </header>
 
-    <section>
-   
-        <h1>Trouver votre hébergement pour des vacances de rêves</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <div> 
-            <form action="GET">
-                <i class="fa-solid fa-location-dot"></i>
-                <label for="nom">Votre nom</label>
-                <input type='text' name="localisation" id="localisation" size="50" maxlength="25" placeholder="Marseille, France"  />
-            </form>
-        </div>
-
-        <div class="filtres">
-            <div>
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Economique</p>
+    <main>
+        <section id="hebergementSearch">
+            <h1>Trouver votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div> 
+                <form action="GET">
+                    <label for="nom"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type='text' name="localisation" id="localisation" size="50" maxlength="25" placeholder="Marseille, France"  />
+                    <button type="submit">Rechercher</button>
+                </form>
             </div>
-        </div>
+    
+            <div id="filtres">
+                <p id="bold">Filtres</p>
+                <div class="filtreName">
+                    <div class="animation"></div>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Economique</p>
+                </div>
 
-        <div class="info">
-            <p>!</p>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-    </section>
+                <div class="filtreName">
+                    <i class="fas fa-child"></i>
+                    <p>Familiale</p>
+                </div>
 
-    <section>
-        <div class="hebergement">
-            <h2>Hébergements à Marseille</h2>
-            <div>
-                <div></div>
-                <div>
-                    <p>Auberge la cannebiere</p>
-                    <p>Nuit à partir de 25 euro</p>
-                    <i class="fa-solid fa-location-dot"></i>
+                <div class="filtreName">
+                    <i class="fas fa-heart"></i>
+                    <p>Romantique</p>
+                </div>
+
+                <div class="filtreName">
+                    <i class="fas fa-dog"></i>
+                    <p>Animaux autorisés</p>
                 </div>
             </div>
-        </div>
+    
 
-        <div class="populaire">
-            <div>
-                <h2>Les plus populaires</h2>
-                <i class="fa-solid fa-location-dot"></i>
+        </section>
+
+        <div id="info">
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        
+        <section id="hebergementGeneral">
+            <div id="hebergement">
+               
+
+                <div id="hebergementAnnonce">
+
+                    <h2>Hébergements à Marseille</h2>
+
+                    <div class="annonceLigne">
+
+                        <div class="annonce">
+                            <div class="background"></div>
+                            <div class="annonceInfo">
+                                <h3>Auberge La Cannebiere</h3>
+                                <p>Nuit à partir de <span class="priceBold">25€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="annonce">
+                            <div class="background"></div>
+                            <div class="annonceInfo">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de <span class="priceBold">52€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>  
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="annonce">
+                            <div class="background"></div>
+                            <div class="annonceInfo">
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de <span class="priceBold">76€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="annonceLigne">
+
+                        <div class="annonce">
+                            <div class="background"></div>
+                            <div class="annonceInfo">
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de <span class="priceBold">46€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="annonce">
+                            <div class="background"></div>
+                            <div class="annonceInfo">
+                                <h3>Auberge le Panier</h3>
+                                <p>Nuit à partir de <span class="priceBold">23€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="annonce">
+                            <div class="background"></div>
+                            <div class="annonceInfo">
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuit à partir de <span class="priceBold">96€</span></p>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    </div>
+                   
+
+                   
+               
+
+                
             </div>
 
-            
-            
-        </div>
-       
-    </section>
+            <div id="hebergement">
+               
+
+                <div id="hebergementAnnoncePopulaire">
+                    
+                    <div id="titlePopulaire">
+                        <h2>Les plus populaires</h2> 
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    
+
+                    <div class="annonceColonne">
+
+                        <div class="annoncePopulaire">
+                            <div class="backgroundPopulaire"></div>
+                            <div class="annonceInfoPopulaire">
+
+                                <div>
+                                    <h3>Auberge La Cannebiere</h3>
+                                    <p>Nuit à partir de <span class="priceBold">25€</span></p>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="annoncePopulaire">
+                            <div class="backgroundPopulaire"></div>
+                            <div class="annonceInfoPopulaire">
+                                
+                                <div>
+                                    <h3>Auberge La Cannebiere</h3>
+                                    <p>Nuit à partir de <span class="priceBold">25€</span></p>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>  
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="annoncePopulaire">
+                            <div class="backgroundPopulaire"></div>
+                            <div class="annonceInfoPopulaire">
+
+                                <div>
+                                    <h3>Auberge La Cannebiere</h3>
+                                    <p>Nuit à partir de <span class="priceBold">25€</span></p>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </div>
+        
+            </div>
+    
+                
+                
+            </div>
+           
+        </section>
+    </main>
+
+    
 </body>
 
 </html>

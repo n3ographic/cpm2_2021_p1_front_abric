@@ -1,23 +1,345 @@
 html, body{
-    margin: 30;
-    font-size: 16px;
+	margin: 0;
+	font-size: 16px;
+	background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
-nav li {
-    list-style: none;
-    padding: 10px;
 
+/*======
+GENERAL
+=======*/
+i {
+    color: #0065FC ;
 }
 
-nav {
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+
+
+main{
+    margin: 0px 30px 0px 30px;
+}
+/*MENU*/
+#menu {
+    margin : 0px 30px 30px 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
    /* margin: 30px;*/
 }
 
+nav ul li {
+    list-style: none;
+    padding: 30px;
+
+}
+
+
 #menu_left{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+
+  .hoverUp:hover{
+    border-top: solid 2px #0065FC ;
+    color: #0065FC ;
+
+  }
+
+  .hoverUp:hover a {
+    color: #0065FC ;
+  }
+
+
+
+
+
+  #bold{
+      font-weight: 600;
+      font-size: 18px;
+  }
+
+
+
+  /*=====================
+  CODE POUR LA SEARCH BAR
+  ======================*/
+form{
+    padding: 20px;
+    display: flex;
+}
+
+  label{
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#localisation{
+    background-color: white;
+    border: solid 1px rgb(218, 218, 218);
+    padding: 20px;
+    width: 250px;
+}
+
+::placeholder{
+    font-weight: 600;
+    color: black;
+    font-size : 18px
+}
+
+form button{
+    color: white;
+    padding: 18px;
+    background-color:#0065FC ;
+    border:none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+
+
+/*=======================
+CODE CSS POUR LES FILTRES
+========================*/
+#filtres{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-between;
+}
+.filtreName{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    border-radius: 40px;
+    border: solid 2px rgb(201, 201, 201);
+    font-weight: 600;
+}
+
+.filtreName p{
+    padding: 0px 15px 0px 15px;
+    z-index: 0;
+}
+.filtreName i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius:40px;
+    background-color:#DEEBFF ;
+    color: #0065FC ;
+    z-index: 1;
+}
+
+.filtreName:before {
+    content: "";
+    border-radius: 40px;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 25;
+    left: 0;
+    background-color: #0065FC;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+  }
+  
+  .filtreName:hover:before {
+      visibility: visible;
+      width: 100%;
+      height:100%;  
+    }
+
+    .filtreName:hover p {
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
+    /*=========================
+    CODE CSS POUR LA PARTIE INFO
+    ==========================*/
+#info{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+#info i{
+    color: #0065FC;
+    padding: 5px;
+    border-radius: 20px;
+    height: 18px;
+    border: solid 2px#d6d6d6;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+#info p {
+    padding-left: 10px;
+}
+
+/*===========================
+CODE DE LA PARTIE HEBERGEMENT
+===========================*/
+
+#hebergementGeneral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#hebergement{
+    background-color:#F2F2F2 ;
+    padding: 35px;
+    border-radius: 20px;
+   width: fit-content;
+}
+
+#hebergementAnnonce{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceBold{
+    font-weight: 600;
+}
+
+.annonceLigne{
+    display:flex;
+    flex-direction: row;
+}
+.annonce{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(218, 219, 235);
+
+}
+
+.background{
+    margin: 5px;
+    width: 275px;
+    height: 150px;
+    background: url(ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat center; 
+    background-size:cover;
+    border-radius: 18px 18px 0px 0px;
+    
+}
+
+.annonceInfo h3{
+    margin: 0;
+}
+
+.annonceInfo p{
+    margin: 5px;
+}
+.annonceInfo{
+    margin: 15px
+}
+
+
+.annonceColonne{
+    display: flex;
+    flex-direction: column;
+}
+.annoncePopulaire{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    width: 425px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(218, 219, 235);
+
+}
+
+.backgroundPopulaire {
+    
+   
+    width: 150px;
+    height: 170px;
+    background: url(ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat center; 
+    background-size:cover;
+
+    border-radius: 18px 0px 0px 18px;
+
+    
+}
+
+.annonceInfoPopulaire{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+
+.annonceInfoPopulaire h3{
+    margin: 0;
+}
+
+#titlePopulaire{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+#titlePopulaire h2{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
