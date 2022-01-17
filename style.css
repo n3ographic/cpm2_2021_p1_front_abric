@@ -495,6 +495,9 @@ CODE DE LA PARTIE HEBERGEMENT
     
 }
 
+/*=======================
+  CODE CSS POUR ACTIVITE
+========================*/
 #activite{
     display: flex;
     flex-wrap: wrap;
@@ -595,10 +598,23 @@ CODE DE LA PARTIE HEBERGEMENT
     margin: 15px
 }
 .activiteInfo h3{
-
-    margin: 0;
-
+    margin: 0
 }
+
+@media screen and (max-width: 768px) {
+
+.activiteBox, .activiteBoxExtraSmall, .activiteBoxSmall, .smallBox{
+    width: 100%;
+  
+}
+.activiteBox, .activiteBoxExtraSmall, .activiteBoxSmall{
+    height: 250px;
+    margin: 20px 0px;
+}
+
+    
+}
+
 
 
 
