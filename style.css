@@ -520,11 +520,15 @@ CODE DE LA PARTIE HEBERGEMENT
     display: flex;
     flex-direction: column;
     height: 500px;
-    width: 20%;
+    width:100%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgb(218, 219, 235);
 
+}
+
+.boxLinkActiviteBox{
+    width: 20%;
 }
 
 .activiteBoxSmall{
@@ -625,11 +629,14 @@ RESPONSIVE PARTIE ACTIVITE
     margin: 20px 0px;
 }
 
+.boxLinkActiviteBox{
+    width: 100%;
+}
     
 }
 
 /*=======================
-    CODE PARTIE FOOTER
+CODE PARTIE FOOTER
 ========================*/
 
 footer{
