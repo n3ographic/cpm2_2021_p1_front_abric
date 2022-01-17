@@ -146,7 +146,7 @@ form button i{
   /*=====================
   RESPONSIVE LA SEARCH BAR
   ======================*/
-  
+
 @media screen and (max-width: 768px) {
     form{
         display: flex;
@@ -154,7 +154,7 @@ form button i{
         padding-left: 0;
         padding-right: 0;
     }
-    #hebergementSearch{
+    #hebergementSearch #p_special, h1{
         text-align: center;
     }
     #buttonRechercher{
@@ -179,7 +179,7 @@ CODE CSS POUR LES FILTRES
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content:space-between;
+    
 }
 .filtreName{
     position: relative;
@@ -191,6 +191,7 @@ CODE CSS POUR LES FILTRES
     border-radius: 40px;
     border: solid 2px rgb(201, 201, 201);
     font-weight: 600;
+    margin: 0px 20px 0px 20px ;
 }
 
 .filtreName p{
@@ -208,6 +209,7 @@ CODE CSS POUR LES FILTRES
     background-color:#DEEBFF ;
     color: #0065FC ;
     z-index: 1;
+   
 }
 
 .filtreName:before {
@@ -234,6 +236,26 @@ CODE CSS POUR LES FILTRES
         color: white;
         transition: all 0.3s ease-in-out;
     }
+
+
+      /*=====================
+     RESPONSIVE PARTIE FILTRE
+      ======================*/
+    @media screen and (max-width: 768px) {
+      #bold{
+          width: 100%;
+          text-align: none !important;
+      }
+      #filtres{
+          width: 100%;
+          justify-content: start;
+      }
+
+      .filtreName{
+        margin: 0px 30px 10px 0px;
+      }
+    }
+    
 
 
 
