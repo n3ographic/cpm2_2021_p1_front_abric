@@ -80,6 +80,7 @@ nav div ul li {
     transition: all 0.2s;
   }
 
+
   /*=====================
     RESPONSIVE NAV BAR 
   ======================*/
@@ -615,6 +616,12 @@ CODE DE LA PARTIE HEBERGEMENT
 }
 
 
+#plusInfo{
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
 /*=======================
 RESPONSIVE PARTIE ACTIVITE
 ========================*/
@@ -631,6 +638,10 @@ RESPONSIVE PARTIE ACTIVITE
 
 .boxLinkActiviteBox{
     width: 100%;
+}
+
+#plusInfo{
+    margin-top: 20px;
 }
     
 }
